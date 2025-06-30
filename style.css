@@ -96,7 +96,8 @@ header {
 
 .homepage {
     padding: 0px;
-    gap: 20px;
+    gap: 0px;
+    margin:250px
 }
 
 .list {
@@ -128,12 +129,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  gap: 15px;                      /* Space between text and image */
+  gap: 15px;                      
 }
 
 .header-img {
   width: 250px;
-  display:flex;                   /* Adjust as needed */
+  display:flex;                   
   height: auto;
   border-radius: 6px;
 }
