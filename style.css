@@ -1,93 +1,76 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
-  --midnight-blue: #003B6D;
-  --blue-sky: #6699CC;
-  --dim-gray: #676767;
-  --silver: #BDBDBD;
+    --midnight-blue: #003B6D;
+    --blue-sky: #6699CC;
+    --dim-gray: #676767;
+    --silver: #BDBDBD;
 }
 
+/* Header and Navigation */
 header {
-  display: flex;        
-  align-items: center; 
-  justify-content: space-between;
-  background:  #003B6D ;
-  padding: 20px;
-  font-weight: 800;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--midnight-blue);
+    padding: 20px;
+    font-weight: 800;
+    width: 100%;
 }
 
-.logos{
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.brand img{
+.brand img {
     width: 200px;
     height: auto;
 }
 
-.dog img{
+.dog img {
     width: 100px;
     height: auto;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .nav-menu {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
-  color: var(--silver);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 15px;
-  transition: background-color 0.3s ease;
+    color: var(--silver);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
-  background-color: #676767; 
-  border-radius: 5px;
+    background-color: var(--dim-gray);
+    border-radius: 5px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  width: 100%;
-}
-
-.nav-menu {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu .nav-item {
-  padding: 10px 18px;
-  color: var(--silver);
-  background: transparent;
-  transition: background-color 0.3s ease; 
-}
-
-.nav-menu .nav-item:hover {
-  background: var(--dim-gray);
-  color: var(--silver); 
-}
-
+/* Main Content Styling */
 .main-title {
     text-align: center;
     margin: 20px;
@@ -95,91 +78,103 @@ header {
 }
 
 .homepage {
-    padding: 0px;
-    gap: 0px;
-    margin:250px
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
-.list {
-    margin:20px;
-    padding:10px;
-    padding-left: 20px;
-    display: flex;
-    align-items: flex-end;
+.text {
+    padding: 20px;
+    line-height: 1.6;
+    color: var(--dim-gray);
 }
 
-.bird-img {
-   width: 300px;
-   height: auto;
-   border-radius: 0px; 
-   display:flex;
-   margin-left: 600px;
-   margin-top: 20px;
+.homepage-header {
+    color: var(--blue-sky);
+    margin: 20px 0;
 }
 
-.home-img {
-   width: 300px;
-   height: auto;
-   border-radius: 0px; 
-   display:flex;
-   margin-left: 600px;
-}
-
+/* Image + Text Layouts */
 .header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  gap: 15px;                      
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .header-img {
-  width: 250px;
-  display:flex;                   
-  height: auto;
-  border-radius: 6px;
+    width: 250px;
+    height: auto;
+    border-radius: 6px;
 }
 
-.homepage-header{
-    color: var(--blue-sky);
-    margin:20px
+.home-intro-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 30px 0;
 }
 
-.text{
-    gap:20px;
-    padding:10px;
+.intro-text {
+    flex: 1;
 }
 
+.home-img, .bird-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Link Styling */
 a {
     text-decoration: none;
-    color: var(--midnight-blue)
+    color: var(--midnight-blue);
 }
 
-.new-link:hover{
+.new-link:hover {
     background-color: var(--blue-sky);
     color: var(--silver);
-    border-radius: 5px
+    border-radius: 5px;
 }
 
-
-.form-item{
-    display:flex;
-    align-items: left;
-    gap: 5px;
-    margin:10px;
+ul {
+  color: var(--dim-gray);
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
 
-.form.text {
-    display:flex;
-    align-items: left;
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Forms */
+.form-item,
+.form.text,
+.submit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
     gap: 5px;
-    margin:10px;
+}
+
+.form-with-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.contact-form {
+  flex: 2;
+}
+
+.form-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
 }
 
 .submit-button {
-    display:flex;
-    align-items: left;
-    gap: 5px;
-    margin:10px;
-    color: var(--blue-sky)
+    color: var(--blue-sky);
 }
-
